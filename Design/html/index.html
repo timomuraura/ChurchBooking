@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Church Booking</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="assets/images/church-favicon.svg" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <div class="container-booking">
+      <div class="header">
+        <div class="top-centered">
+          <span>CHURCH NAME</span>
+          <span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+        </div>
+      </div>
+
+      <div class="wrap-booking">
+        <span class="booking-form-title">
+          14th Jul 2020
+        </span>
+
+        <form class="booking-form">
+          <div class="wrap-input input-select">
+            <span class="label-input">Service</span>
+            <div>
+              <select class="selection-2" name="service">
+                <option>Choose Available Service</option>
+                <option>service 1</option>
+                <option>service 2</option>
+                <option>service 3</option>
+                <option>service 4</option>
+                <option>service 5</option>
+                <option>service 6</option>
+                <option>service 7</option>
+              </select>
+            </div>
+            <span class="focus-input"></span>
+          </div>
+
+          <div
+            class="wrap-input validate-input"
+            data-validate="Some error feedback here!!!"
+          >
+            <span class="label-input">Contact</span>
+            <input
+              class="input"
+              type="number"
+              name="phone"
+              placeholder="Enter Phone Number"
+            />
+            <span class="focus-input"></span>
+          </div>
+
+          <div class="wrap-input input-select">
+            <span class="label-input">Seats to reserve</span>
+            <div>
+              <select class="selection-2" name="budget">
+                <option>Select Number of Seats</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <span class="focus-input"></span>
+          </div>
+
+          <div
+            class="wrap-input validate-input"
+            data-validate="Some error feedback here!!!"
+          >
+            <span class="label-input">Name of person one</span>
+            <input
+              class="input"
+              type="text"
+              name="person-name"
+              placeholder="Enter Name"
+            />
+            <span class="focus-input"></span>
+          </div>
+
+          <div
+            class="wrap-input validate-input"
+            data-validate="Some error feedback here!!!"
+          >
+            <span class="label-input">Age of person one</span>
+            <input
+              class="input"
+              type="number"
+              name="phone"
+              placeholder="Enter Age"
+            />
+            <span class="focus-input"></span>
+          </div>
+
+          <div class="container-booking-form-btn">
+            <div class="wrap-booking-form-btn">
+              <div class="booking-form-bgbtn"></div>
+              <button class="booking-form-btn">
+                <span>
+                  Submit
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/js/select2.min.js"></script>
+    <script>
+      $(".selection-2").select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $("#dropDownSelect1"),
+      });
+    </script>
+  </body>
+</html>
